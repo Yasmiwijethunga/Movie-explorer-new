@@ -1,0 +1,34 @@
+
+/* Wrapper styling  */
+.search-bar-container {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--background); /* support for dark/light themes */
+  color: var(--text-color);
+}
+
+/* focus effect */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #d21951; /* MUI default blue or customize */
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+/*  rounded input */
+.MuiOutlinedInput-root {
+  border-radius: 8px;
+  background-color: var(--background); /* support for dark/light themes */
+  color: var(--text-color);
+}
+
+/* Placeholder color */
+.MuiInputBase-input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* On hover */
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #888;
+}

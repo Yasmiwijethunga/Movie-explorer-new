@@ -1,0 +1,169 @@
+/* Profile.css */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+ 
+}
+
+:root {
+  --background: rgba(138, 102, 102, 0.05);
+  --border: rgba(255, 255, 255, 0.2);
+  --text: #c9e6a5;
+  --accent: #007bff;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: rgba(212, 187, 187, 0.7);
+    --border: rgba(0, 0, 0, 0.1);
+    --text: #111;
+    --accent: #007bff;
+    --shadow: rgba(33, 31, 31, 0.1);
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  margin-top: 5px;
+  
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.logout-btn {
+  padding: 8px 14px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: darkred;
+}
+
+.profile-card {
+  background-color:rgb(233, 222, 202);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px var(--shadow);
+  backdrop-filter: blur(14px);
+  font-size: 15px;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+
+.profile-avatar h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.profile-avatar p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.profile-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.profile-fields input,
+.profile-fields select {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.profile-fields input:focus,
+.profile-fields select:focus {
+  border-color: var(--accent);
+}
+
+.email-section {
+  margin-bottom: 30px;
+}
+
+.email-section h4 {
+  margin-bottom: 12px;
+}
+
+.email-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.email-icon {
+  font-size: 1.2rem;
+}
+
+.email-date {
+  margin-left: auto;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.profile-actions {
+  text-align: right;
+}
+
+.profile-actions button {
+  padding: 10px 16px;
+  background-color: var(--accent);
+  color: #e9e2e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile-actions button:hover {
+  background-color: #0056b3;
+}

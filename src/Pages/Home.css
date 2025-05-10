@@ -1,0 +1,125 @@
+/* Home.css */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.overlay-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+}
+
+.overlay-banner .content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.overlay-banner h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-banner p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.movie-scroll {
+  padding: 2rem;
+  background-color: #000;
+}
+
+.movie-scroll h2 {
+  margin-bottom: 1rem;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.movie-card {
+  min-width: 150px;
+  flex: none;
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+}
+
+.movie-card p {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.reasons-section {
+  padding: 3rem 2rem;
+  background-color: #111;
+  margin-bottom: -40px;
+}
+
+.reasons-section h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.reason-card {
+  background-color: #222;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
+.overlay-banner .content {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  padding:1rem;
+  border-Radius: 10px;
+}
