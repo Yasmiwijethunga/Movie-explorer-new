@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Movie Explorer App 🎬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+A responsive movie discovery app using TMDb API. Features include search, trending, movie details, user login/register, profile, and dark/light mode.
 
-## Available Scripts
+## 🚀 Live Demo
+ 🔗 [https://movie-explorer-new.vercel.app]
 
-In the project directory, you can run:
+## Features Implemented
 
-### `npm start`
+- 🔐 User  (Login/Register)
+- 🔍 Movie Search and Trending Movies
+- 🔍 Movie sorting by popularity and rating
+- 🎥 Movie Details Page with YouTube Trailer
+- ⭐ Add to Favorites (stored in localStorage)
+- 🎛️ Filter Movies by Genre, Year, and Rating
+- 🌗 Light/Dark Theme Toggle
+- 📱 Responsive UI using Material-UI
+- 🔒 Protected Routes (Profile, Favorites)
+- ⚠️ Error Handling for API and Network Issues
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the repo
+```bash
+git clone https://gitlab.com/yasmiwijethunga/movie-explorer-new
+cd movie-explorer
 
-### `npm test`
+Github: clone https://github.com/Yasmiwijethunga/Movie-explorer-new
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.Install_dependencies
+  npm install
 
-### `npm run build`
+3. Run the app
+    npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4.API Used
+    TMDb API
+    YouTube API 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5.REACT_APP_TMDB_API_KEY=your_tmdb_api_key_here
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+6. 📂 Project Structure    
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    src/
+├── components/ # Reusable UI components
+├── pages/ # Pages like Login, Register, Profile, Favorites
+├── context/ # Global state (e.g., AuthContext)
+├── services/ # API utilities (TMDb, YouTube)
+├── App.jsx # Main routing and layout
+└── index.js # Entry point
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+7.GitLab Repository Structure
+    movie-explorer-new/
+├── public/
+│   └── index.html
+├── src/
+├── ├──api/tmdb.js  
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── MovieCard.jsx
+│   │   └── ... (other reusable UI components)
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Favorites.jsx
+│   │   ├── MovieDetails.jsx
+│   │   └── Home.jsx (and others..)
+│   ├ 
+│   ├── services/
+│   │   └── api.js
+│   ├── App.jsx
+│   ├── index.js
+│   └
+├── .gitignore
+├── README.md ✅ (see below)
+├── package.json
+└── package-lock.json
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+8.Folder Structure
+    /src/components – Reusable UI
+    /src.api 
+    /src/pages – Page-level views
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+9. Technologies Used
+React
 
-### Code Splitting
+React Router DOM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Material-UI (MUI)
 
-### Analyzing the Bundle Size
+Axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+TMDb API
 
-### Making a Progressive Web App
+YouTube Embed (optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Context API (Auth/Favorites)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+LocalStorage for persistence
